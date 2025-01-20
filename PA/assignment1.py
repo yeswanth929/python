@@ -84,4 +84,19 @@ letter= input("given letter : ").lower()
 if letter in {'a','e','i','o','u'}:
   print("vowel")
 else:
-  print("consonant")
+  print("consonant") 
+
+
+#Write a program that checks if a number is within a specific range. Ask the user to input the number, as well as the start and end of the range. 
+#Print "In range" if the number is within the range, otherwise print "Out of range".
+
+start = int(input("Enter the start of the range: "))
+end = int(input("Enter the end of the range: "))
+
+n1= int(input("give number : "))
+
+if (start<= n1 <= end):
+  print("in range")
+else:
+  print("out of range")
+
