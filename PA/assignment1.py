@@ -1,4 +1,4 @@
-#find even or odd
+#1find even or odd
 
 number=int(input("Given number is : "))
 if(number % 2 == 0):
@@ -6,7 +6,7 @@ if(number % 2 == 0):
 else:
  print("The number is odd")
 
-#Write a program that takes a number from the user and prints:
+#2Write a program that takes a number from the user and prints:
 #"Positive" if the number is greater than zero.
 #"Negative" if the number is less than zero.
 #"Zero" if the number is exactly zero.
@@ -23,7 +23,7 @@ else:
 
 
 
-#Write a program to check if a given year is a leap year. A year is a leap year if:
+#3Write a program to check if a given year is a leap year. A year is a leap year if:
 #It is divisible by 4, and
 #Not divisible by 100 unless it is also divisible by 400.
 
@@ -41,7 +41,7 @@ else:
 
 
 
-#Write a program that takes three numbers from the user and prints the largest of the three.
+#4Write a program that takes three numbers from the user and prints the largest of the three.
 
 n1=int(input("given number n1 is: "))
 n2=int(input("given number n2 is: "))
@@ -56,7 +56,7 @@ else:
   print("invalid!")
 
   
-#Write a program that takes a score (0 to 100) from the user and assigns a grade:
+#5Write a program that takes a score (0 to 100) from the user and assigns a grade:
   
 # 90-100: Grade A 
 # 80-89: Grade B
@@ -77,7 +77,7 @@ else:
    print("Grade F")
 
 
-#Write a program that checks if a given character is a vowel (a, e, i, o, u) or a consonant. Assume the input is a single letter.
+#6Write a program that checks if a given character is a vowel (a, e, i, o, u) or a consonant. Assume the input is a single letter.
 
 
 letter= input("given letter : ").lower()
@@ -87,7 +87,7 @@ else:
   print("consonant") 
 
 
-#Write a program that checks if a number is within a specific range. Ask the user to input the number, as well as the start and end of the range. 
+#7Write a program that checks if a number is within a specific range. Ask the user to input the number, as well as the start and end of the range. 
 #Print "In range" if the number is within the range, otherwise print "Out of range".
 
 start = int(input("Enter the start of the range: "))
@@ -98,5 +98,40 @@ n1= int(input("give number : "))
 if (start<= n1 <= end):
   print("in range")
 else:
-  print("out of range")
+  print("out of range") 
 
+
+#8Write a program that takes two numbers and checks if the first number is divisible by the second. If not, print the remainder.
+
+
+n1 = int(input("give the first number: "))
+n2 = int(input("give the second number: "))
+
+if (n1 % n2 == 0):
+  print("1st number is divisible by 2nd")
+else:
+  remainder = n1 % n2
+  print(f"The remainder is {remainder}") 
+
+
+#9Write a program that asks for the user’s age and checks if they are eligible to vote. Assume the voting age is 18 or older
+
+age=int(input("the person age is "))
+if (age >=18):
+  print("eligible to vote")
+else:
+  print("not eligible to vote your age is not 18 or above") 
+
+
+#10Write a program that takes three numbers from the user and prints the smallest of the three.
+n1 = int(input("give the 1st number: "))
+n2 = int(input("give the 2nd number: "))
+n3 = int(input("give the 3rd number: "))
+if ( n1 <= n2 and n1 <= n3 ):
+    print(f"{n1} is the smallest")
+elif( n2 <= n1 and n2 <= n3 ):
+    print(f"{n2} is the smallest")
+elif(n3 <= n1 and n3 <= n2):
+    print(f"{n3} is the smallest")
+else:
+    print("invalid!")
